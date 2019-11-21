@@ -8,7 +8,7 @@ if (!file_exists('token')) {
 include ("curl.php");
 echo "\n";
 echo "\e[94m  =================================================\n";
-echo "\e[95m         ========RePUBLIK GEDEL========            \n";
+echo "\e[92m         ========RePUBLIK GEDEL========            \n";
 echo "\e[93m    TOOL AUTO REGIATRASI DAN AUTO REDEM VOUCER     \n";
 echo "\e[93m   GOFOOD GOPULSA GORIDE TAPI ORA ISO GOPESEN LC   \n";
 echo "\e[93m  DINGGO SAK MADYO WAE OJO SAK GELEME UDELMU DEWE  \n";
@@ -29,7 +29,7 @@ if ($register == false)
     $verif = verif($otp, $register);
     if ($verif == false)
         {
-        echo "\e[91m[x] OTP MU SALAH NYUK \n";
+        echo "\e[97m[x] OTP MU SALAH NYUK \n";
         goto otp;
         }
       else
@@ -58,14 +58,14 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Jajal Voucher : GOFOODPASTA19 !\n";
+                echo "\e[93m[!] Voucher : GOFOODPASTA19 !\n";
                 sleep(3);
                 goto next1;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Jajal Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -74,7 +74,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Jajal Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -82,7 +82,7 @@ if ($register == false)
             {
             echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] Jajal Voucher : COBAINGOJEK !\n";
+            echo "\e[93m[!] Voucher : COBAINGOJEK !\n";
             sleep(3);
             goto ride;
             }
@@ -91,14 +91,14 @@ if ($register == false)
             if ($claim == false ) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : AYOCOBAGOJEK !\n";
+                echo "\e[93m[!]  Voucher : AYOCOBAGOJEK !\n";
                 sleep(3);
 
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : AYOCOBAGOJEK !\n";
+                echo "\e[93m[!] Voucher : AYOCOBAGOJEK !\n";
                 sleep(3);
                 goto pengen;
             }
