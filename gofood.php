@@ -11,7 +11,7 @@ echo "\e[99m                   RePUBLIK GEDEL               \n";
 echo "\e[91m    RASAH CRIGIS RASAH CEREWET DINGGO DEWE WAE  \n";
 echo "\e[96m GOFOOD GOPULSA GORIDE TAPI ORA ISO PESEN LC NYUK \n";
 echo "\n";
-echo "\e[96m[?]TULISEN NOMER HENGPUNE NANG KENE: ";1
+echo "\e[96m[?]TULISEN NOMER HENGPUNE NANG KENE: ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
@@ -21,7 +21,7 @@ if ($register == false)
   else
     {
     otp:
-    echo "\e[96m[!] KODE VERIFIKASI OTP NE TULIS NENG KENE : ";
+    echo "\e[96m[!] OTPne TULIS NENG KENE : ";
     $otp = trim(fgets(STDIN));
     $verif = verif($otp, $register);
     if ($verif == false)
