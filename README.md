@@ -11,8 +11,8 @@ Step By Step Command Line On Termux :
 2. pkg install curl
 3. pkg install git
 4. git clone https://github.com/gtxbgt/gofood
-5. cd gojeksantai
-6. php gojek.php
+5. cd gofood
+6. php gofood.php
 7. masukin nomor hp
 8. masukin kode verifikasi(OTP)
 9. pilih kode voucher
