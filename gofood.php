@@ -7,11 +7,14 @@ if (!file_exists('token')) {
 
 include ("curl.php");
 echo "\n";
-echo "\e[99m                   RePUBLIK GEDEL               \n";
-echo "\e[91m    RASAH CRIGIS RASAH CEREWET DINGGO DEWE WAE  \n";
-echo "\e[96m GOFOOD GOPULSA GORIDE TAPI ORA ISO PESEN LC NYUK \n";
+echo "\e[94m  =================================================\n";
+echo "\e[95m         ========RePUBLIK GEDEL========            \n";
+echo "\e[93m    TOOL AUTO REGIATRASI DAN AUTO REDEM VOUCER     \n";
+echo "\e[93m   GOFOOD GOPULSA GORIDE TAPI ORA ISO GOPESEN LC   \n";
+echo "\e[93m  DINGGO SAK MADYO WAE OJO SAK GELEME UDELMU DEWE  \n";
+echo "\e[94m  =================================================\n";
 echo "\n";
-echo "\e[96m[?]TULISEN NOMER HENGPUNE NANG KENE: ";
+echo "\e[96m[?]DIISI NOMER HENGPUNE: ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
@@ -21,7 +24,7 @@ if ($register == false)
   else
     {
     otp:
-    echo "\e[96m[!] OTPne TULIS NENG KENE: ";
+    echo "\e[96m[!] DIISI KODE OTP: ";
     $otp = trim(fgets(STDIN));
     $verif = verif($otp, $register);
     if ($verif == false)
