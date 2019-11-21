@@ -1,18 +1,23 @@
-PPS REQUIRED :
+APPS REQUIRED :
+- TERMUX
+- GOJEK
+- 2nd Line
+- Text Now
 
-TERMUX
-GOJEK
-WAJIB NOMOR BARU atau NOMOR YANG BELUM TERDAFTAR GOJEK
+*WAJIB NOMOR BARU atau NOMOR YANG BELUM TERDAFTAR GOJEK*
 
 Step By Step Command Line On Termux :
+1. pkg install php
+2. pkg install curl
+3. pkg install git
+4. git clone https://github.com/gtxbgt/gofood
+5. cd gojeksantai
+6. php gojek.php
+7. masukin nomor hp
+8. masukin kode verifikasi(OTP)
+9. pilih kode voucher
+10. repeat(ulangi seperti biasa)
 
-pkg install php
-pkg install curl
-pkg install git
-git clone https://github.com/KucingMangkal/gojeksantai
-cd gojeksantai
-php gojek.php
-masukin nomor hp
-masukin kode verifikasi(OTP)
-pilih kode voucher
-repeat(ulangi seperti biasa)
+
+
+
