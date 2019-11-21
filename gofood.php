@@ -7,11 +7,11 @@ if (!file_exists('token')) {
 
 include ("curl.php");
 echo "\n";
-echo "\e[94m                   RePUBLIK GEDEL               \n";
+echo "\e[99m                   RePUBLIK GEDEL               \n";
 echo "\e[91m    RASAH CRIGIS RASAH CEREWET DINGGO DEWE WAE  \n";
-echo "\e[96m          GOFOOD SANTAI GOPULSA LAN GORIDE      \n";
+echo "\e[96m GOFOOD GOPULSA GORIDE TAPI ORA ISO PESEN LC NYUK \n";
 echo "\n";
-echo "\e[96m[?] 	TULISEN NOMER HENGPUNE NANG KENE    : ";
+echo "\e[96m[?]TULISEN NOMER HENGPUNE NANG KENE: ";1
 $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
@@ -32,21 +32,21 @@ if ($register == false)
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] Jajal Voucher : GOFOODSANTAI19 !\n";
+        echo "\e[93m[!] tiket mangan : GOFOODSANTAI19 !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!] Jajal Voucher: GOFOODSANTAI11 !\n";
+            echo "\e[93m[!] tiket madang : GOFOODSANTAI11 !\n";
             sleep(3);
             goto next;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Jajal Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
