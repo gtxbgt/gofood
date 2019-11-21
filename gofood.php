@@ -21,7 +21,7 @@ if ($register == false)
   else
     {
     otp:
-    echo "\e[96m[!] OTPne TULIS NENG KENE : ";
+    echo "\e[96m[!] OTPne TULIS NENG KENE: ";
     $otp = trim(fgets(STDIN));
     $verif = verif($otp, $register);
     if ($verif == false)
