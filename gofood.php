@@ -19,7 +19,7 @@ $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
     {
-    echo "\e[91m[x] Nomor Wes Kanggo ganti liyane NYUK \n";
+    echo "\e[91m[x] NOMER ORA ISO DIENGGO \n";
     }
   else
     {
@@ -29,27 +29,27 @@ if ($register == false)
     $verif = verif($otp, $register);
     if ($verif == false)
         {
-        echo "\e[97m[x] OTP MU SALAH NYUK \n";
+        echo "\e[97m[x] OTP MU SALAH  \n";
         goto otp;
         }
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] tiket mangan : GOFOODSANTAI19 !\n";
+        echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : GOFOODSANTAI19 !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!] tiket madang : GOFOODSANTAI11 !\n";
+            echo "\e[93m[!]SOLALLAHU ALLA MUHAMMAD: GOFOODSANTAI11 !\n";
             sleep(3);
             goto next;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -58,14 +58,23 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Voucher : GOFOODPASTA19 !\n";
+                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : GOFOODPASTA19 !\n";
+                sleep(3);
+                goto next2;
+            }
+            next2:
+            $claim = claim1($verif);
+            if ($claim == false) {
+                echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
+                sleep(3);
+                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : GOFOODSENANG19 !\n";
                 sleep(3);
                 goto next1;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -74,7 +83,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -82,7 +91,7 @@ if ($register == false)
             {
             echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] Voucher : COBAINGOJEK !\n";
+            echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : COBAINGOJEK !\n";
             sleep(3);
             goto ride;
             }
@@ -91,21 +100,21 @@ if ($register == false)
             if ($claim == false ) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!]  Voucher : AYOCOBAGOJEK !\n";
+                echo "\e[93m[!]  SOLALLAHU ALLA MUHAMMAD : AYOCOBAGOJEK !\n";
                 sleep(3);
 
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Voucher : AYOCOBAGOJEK !\n";
+                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : AYOCOBAGOJEK !\n";
                 sleep(3);
                 goto pengen;
             }
             pengen:
             $claim = cekvocer($verif);
             if ($claim == false ) {
-                echo "\033VOUCHER BOSOK/GAGAL LIK BALENI MENEH YO\n";
+                echo "\033ASTAUGFIRULLAH HAK ADZIIIIIIM.... SABAR GAGAL IKU AMERGO DURUNG REJEKINE BALENI MENEH YO SEMANGAT\n";
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
