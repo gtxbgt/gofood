@@ -59,7 +59,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Crack voucher : GOFOODPASTA19 !\n";
+                echo "\e[93m[!] Crack voucher : GOFOODSANTAI19 !\n";
                 sleep(3);
                 goto next2;
             }
