@@ -13,8 +13,9 @@ echo "\e[93m    TOOL AUTO REGIATRASI DAN AUTO REDEM VOUCER     \n";
 echo "\e[93m   GOFOOD GOPULSA GORIDE TAPI ORA ISO GOPESEN LC   \n";
 echo "\e[93m  DINGGO SAK MADYO WAE OJO SAK GELEME UDELMU DEWE  \n";
 echo "\e[94m  =================================================\n";
+echo "\e[96m  =================================================\n";
 echo "\n";
-echo "\e[96m[?]DIISI NOMER HENGPUNE: ";
+echo "\e[96m[?] DIISI NOMER HENGPUNE: ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
@@ -35,21 +36,21 @@ if ($register == false)
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : GOFOODSANTAI19 !\n";
+        echo "\e[93m[!] Crack voucher : GOFOODSANTAI19 !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!]SOLALLAHU ALLA MUHAMMAD: GOFOODSANTAI11 !\n";
+            echo "\e[93m[!] Crack voucher: GOFOODSANTAI11 !\n";
             sleep(3);
             goto next;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : COBAINGOJEK !\n";
+                echo "\e[93m[!] Crack voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -58,7 +59,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : GOFOODPASTA19 !\n";
+                echo "\e[93m[!] Crack voucher : GOFOODPASTA19 !\n";
                 sleep(3);
                 goto next2;
             }
@@ -67,14 +68,14 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : GOFOODSENANG19 !\n";
+                echo "\e[93m[!] Crack voucher : GOFOODSENANG19 !\n";
                 sleep(3);
                 goto next1;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : COBAINGOJEK !\n";
+                echo "\e[93m[!] Crack voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -83,7 +84,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : COBAINGOJEK !\n";
+                echo "\e[93m[!] Crack voucher : COBAINGOJEK !\n";
                 sleep(3);
                 goto ride;
             }
@@ -91,7 +92,7 @@ if ($register == false)
             {
             echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : COBAINGOJEK !\n";
+            echo "\e[93m[!] Crack voucher : COBAINGOJEK !\n";
             sleep(3);
             goto ride;
             }
@@ -107,14 +108,14 @@ if ($register == false)
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] SOLALLAHU ALLA MUHAMMAD : AYOCOBAGOJEK !\n";
+                echo "\e[93m[!] Crack voucher : AYOCOBAGOJEK !\n";
                 sleep(3);
                 goto pengen;
             }
             pengen:
             $claim = cekvocer($verif);
             if ($claim == false ) {
-                echo "\033ASTAUGFIRULLAH HAK ADZIIIIIIM.... SABAR GAGAL IKU AMERGO DURUNG REJEKINE BALENI MENEH YO SEMANGAT\n";
+                echo "\033 ASTAUGFIRULLAH HAK ADZIIIIIIM.... SABAR GAGAL IKU AMERGO DURUNG REJEKINE BALENI MENEH YO SEMANGAT\n";
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
